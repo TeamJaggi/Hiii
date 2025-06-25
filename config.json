@@ -1,8 +1,5 @@
 {
-  "source_channels": ["@sourcechannel1"],
-  "target_channels": ["@targetchannel1"],
-  "replacements": {
-    "https://oldlink.com": "https://newlink.com",
-    "badword": "goodword"
-  }
+  "source_channels": ["@sourcechannel"],
+  "target_channels": ["@targetchannel"],
+  "replacements": {}
 }
