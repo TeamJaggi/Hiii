@@ -115,6 +115,14 @@ async def forward(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await context.bot.send_video(chat_id=target, video=msg.video.file_id, caption=text)
             elif msg.document:
                 await context.bot.send_document(chat_id=target, document=msg.document.file_id, caption=text)
+            elif msg.sticker:
+                await context.bot.send_sticker(chat_id=target, sticker=msg.sticker.file_id)
+            elif msg.audio:
+                await context.bot.send_audio(chat_id=target, audio=msg.audio.file_id, caption=text)
+            elif msg.voice:
+                await context.bot.send_voice(chat_id=target, voice=msg.voice.file_id, caption=text)
+            elif msg.video_note:
+                await context.bot.send_video_note(chat_id=target, video_note=msg.video_note.file_id)
         except Exception as e:
             logging.error(f"Failed to forward to {target}: {e}")
 
