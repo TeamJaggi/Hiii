@@ -9,10 +9,7 @@ from telegram.ext import (
     filters,
 )
 
-from dotenv import load_dotenv
-import os
-load_dotenv()
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = "8103884844:AAE-67rbwRIjVu98GCg4TWPuxq2Yz9JdvrY"
 CONFIG_FILE = "config.json"
 
 logging.basicConfig(level=logging.INFO)
