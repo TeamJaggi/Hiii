@@ -1,5 +1,5 @@
 {
-  "source_channels": ["@sourcechannel"],
-  "target_channels": ["@targetchannel"],
+  "source_channels": [],
+  "target_channels": [],
   "replacements": {}
 }
